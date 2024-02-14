@@ -1,0 +1,57 @@
+body {
+    font-family: Verdana,sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.vertical-menu {
+    width: 240px;
+    background-color:  #4CAF50;
+    padding-top: 20px;
+    overflow-x: hidden;
+}
+.vertical-menu a {
+    list-style: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: 0.3s;
+    position: relative;
+}
+
+.vertical-menu a:hover {
+    background-color: white;
+    color: black;
+}
+
+.vertical-menu a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #e08020; /* Color de chispa (amarillo) */
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s ease-out;
+}
+
+.vertical-menu a:hover::after {
+    transform: translate(-50%, -50%) scale(3);
+}
+.container {
+    display: inline-block;
+    background-color:#4CAF50;
+    color: black;
+    padding: 30px 20px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 500px;
+    right: 300px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}

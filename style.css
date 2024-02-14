@@ -1,0 +1,40 @@
+*{
+    margin: 50px;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    line-height: none;
+    background-color: white;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.caja__trasera {
+    width: 100%;
+    background: white;
+    border: 10px solid  #4CAF50;
+    position: center;
+    border-radius: 20px;
+
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px  solid black;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    outline: none;
+    border-radius: 20px;
+
+}
+
+.caja__trasera button:hover{
+    background: white;
+    color: #4CAF50;
+
+}
